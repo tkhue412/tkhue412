@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài Tập đổi màu chữ khi đưa con chỏ vô</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div style="background-color: yellow;" id="my_div" onmouseover="changeColorGreen()" onmouseleave="changeColorYellow()">
+            Bài 1
+            <hr>
+            Bài 2
+            <hr>
+            Bài 3
+        </div>
+        <script>
+            function changeColorGreen() {
+                var my_div = document.getElementById("my_div");
+                my_div.style = "background-color: green;"
+            }
+            function changeColorYellow() {
+                var my_div = document.getElementById("my_div");
+                my_div.style = "background-color: yellow;"
+            }
+        </script>
+    </body>
+</html>
